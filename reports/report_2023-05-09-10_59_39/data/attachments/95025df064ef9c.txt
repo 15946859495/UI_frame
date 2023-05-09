@@ -1,0 +1,12 @@
+INFO     2023-05-09 10:51:06 [core.until.cases:81]  : 测试用例开始执行
+INFO     2023-05-09 10:51:06 [core.until.cases:91]  : 解析用例名称:case_name='验证互动雷达主页导出功能', fixture_name='admin_driver'
+INFO     2023-05-09 10:51:07 [core.until.cases:104]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-09 10:51:08 [core.until.cases:104]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-09 10:51:09 [core.until.cases:104]  : 执行关键字name='导出目录初始化', key='clear_file', args=['C:\\Users\\wangy\\Downloads,互动雷达.xlsx,3']
+INFO     2023-05-09 10:51:09 [webdriver_helper:318]  : (['C:\\Users\\wangy\\Downloads', '互动雷达.xlsx', '3'])
+INFO     2023-05-09 10:51:12 [core.until.cases:104]  : 执行关键字name='点击导出按钮', key='click', args=['//span[contains(text(),"导出Excel")]']
+INFO     2023-05-09 10:51:12 [core.until.cases:104]  : 执行关键字name='断言文件内容', key='assert_file', args=['C:\\Users\\wangy\\Downloads,互动雷达.xlsx,3,雷达标题,点击人数,点击次数']
+INFO     2023-05-09 10:51:15 [webdriver_helper:334]  : assert (i='雷达标题') in (msg=['雷达标题', '点击次数', '点击人数'])
+INFO     2023-05-09 10:51:15 [webdriver_helper:334]  : assert (i='点击人数') in (msg=['雷达标题', '点击次数', '点击人数'])
+INFO     2023-05-09 10:51:15 [webdriver_helper:334]  : assert (i='点击次数') in (msg=['雷达标题', '点击次数', '点击人数'])
+INFO     2023-05-09 10:51:15 [core.until.cases:111]  : 测试用例执行结束

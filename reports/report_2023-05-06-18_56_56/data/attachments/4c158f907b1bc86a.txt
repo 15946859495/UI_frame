@@ -1,0 +1,26 @@
+INFO     2023-05-06 18:49:28 [core.until.cases:81]  : 测试用例开始执行
+INFO     2023-05-06 18:49:28 [core.until.cases:91]  : 解析用例名称:case_name='正常创建个人活动码', fixture_name='admin_driver'
+INFO     2023-05-06 18:49:29 [core.until.cases:104]  : 执行关键字name='点击导航栏渠道活码工具选项', key='click', args=["//span[contains(text(),'渠道活码工具')]"]
+INFO     2023-05-06 18:49:30 [core.until.cases:104]  : 执行关键字name='点击导航栏活动码选项', key='click', args=["//span[contains(text(),'活动码')]"]
+INFO     2023-05-06 18:49:30 [core.until.cases:104]  : 执行关键字name='点击导航栏个人活动码选项', key='click', args=["//span[contains(text(),'个人活动码')]"]
+INFO     2023-05-06 18:49:31 [core.until.cases:104]  : 执行关键字name='切换个人活动码主页', key='iframe_enter', args=['//iframe[@src="/marketing/personalActivityCode/page"]']
+INFO     2023-05-06 18:49:31 [core.until.cases:104]  : 执行关键字name='点击创建个人活动码按钮', key='click', args=["//span[contains(text(),'创建个人活动码')]"]
+INFO     2023-05-06 18:49:33 [core.until.cases:104]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-06 18:49:33 [core.until.cases:104]  : 执行关键字name='切换创建个人活动码页面', key='iframe_enter', args=['//iframe[@src="/marketing/personalActivityCode/create"]']
+INFO     2023-05-06 18:49:33 [core.until.cases:104]  : 执行关键字name='输入活动名称', key='input', args=["//label[contains(text(),'活动名称')]/../div/div[1]/input", 'zdh测试正常创建个人活动码名称']
+INFO     2023-05-06 18:49:35 [core.until.cases:104]  : 执行关键字name='点击关联主理按钮', key='click', args=["//span[contains(text(),'选择关联主理')]"]
+INFO     2023-05-06 18:49:36 [core.until.cases:104]  : 执行关键字name='控件输入主理人名称', key='input', args=['//input[@placeholder = "搜索门店/主理人"]', 'U2店长']
+INFO     2023-05-06 18:49:36 [core.until.cases:104]  : 执行关键字name='控件输入框回车', key='keyboard_enter', args=['//input[@placeholder = "搜索门店/主理人"]']
+INFO     2023-05-06 18:49:36 [core.until.cases:104]  : 执行关键字name='勾选全部主理人', key='click', args=["//span[contains(text(),'全部主理')]/../label/span/input"]
+INFO     2023-05-06 18:49:37 [core.until.cases:104]  : 执行关键字name='点击控件确认按钮', key='click', args=["//span[contains(text(),'确定')]"]
+INFO     2023-05-06 18:49:37 [core.until.cases:104]  : 执行关键字name='输入框输入渠道名称', key='input', args=["//label[contains(text(),'选择渠道')]/../div/div/div[1]/div[1]/input", 'AAA·1 / BBB / CCC']
+INFO     2023-05-06 18:49:38 [core.until.cases:104]  : 执行关键字name='选择渠道', key='click', args=["//span[contains(text(),'AAA·1 / BBB / CCC')]", 'force=True']
+INFO     2023-05-06 18:49:39 [core.until.cases:104]  : 执行关键字name='输入用户标签', key='input', args=['/html/body/div[1]/div/div/div/div/form/div[5]/div/div/div[1]/div/input', '测试人群包']
+INFO     2023-05-06 18:49:39 [core.until.cases:104]  : 执行关键字name='选择用户标签', key='click', args=["//li[contains(text(),'测试人群包')]"]
+INFO     2023-05-06 18:49:40 [core.until.cases:104]  : 执行关键字name='输入文本欢迎语', key='input', args=["//textarea[@maxlength = '1000']", 'zdh测试个人活动码欢迎语']
+INFO     2023-05-06 18:49:41 [core.until.cases:104]  : 执行关键字name='点击保存并生成活动码按钮', key='click', args=["//div[@class='buttonContainer']/button[2]/span"]
+INFO     2023-05-06 18:49:41 [core.until.cases:104]  : 执行关键字name='点击保存并生成活动码按钮', key='click', args=["//div[@class='buttonContainer']/button[2]/span"]
+INFO     2023-05-06 18:49:41 [core.until.cases:104]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-06 18:49:41 [core.until.cases:104]  : 执行关键字name='断言提示信息', key='assert_text', args=["//div[@class='ivu-notice-title']", '创建成功']
+INFO     2023-05-06 18:49:43 [webdriver_helper:226]  : assert (text='创建成功') == (element.text='创建成功')
+INFO     2023-05-06 18:49:44 [core.until.cases:111]  : 测试用例执行结束

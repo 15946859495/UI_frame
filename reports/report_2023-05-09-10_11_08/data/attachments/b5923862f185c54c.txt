@@ -1,0 +1,20 @@
+INFO     2023-05-09 10:01:49 [core.until.cases:81]  : 测试用例开始执行
+INFO     2023-05-09 10:01:49 [core.until.cases:91]  : 解析用例名称:case_name='验证添加雷达渠道功能', fixture_name='admin_driver'
+INFO     2023-05-09 10:01:50 [core.until.cases:104]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-09 10:01:50 [core.until.cases:104]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-09 10:01:51 [core.until.cases:104]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', 'zdh测试正常创建互动雷达标题']
+INFO     2023-05-09 10:01:51 [core.until.cases:104]  : 执行关键字name='搜索框输入创建人用户名', key='input', args=['//label[contains(text(),"创建人")]/../div/div/input', '神秘人']
+INFO     2023-05-09 10:01:52 [core.until.cases:104]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]']
+INFO     2023-05-09 10:01:52 [core.until.cases:104]  : 执行关键字name='等待', key='sleep', args=[1]
+INFO     2023-05-09 10:01:53 [core.until.cases:104]  : 执行关键字name='点击分享按钮', key='click', args=['//tbody[1]/tr/td[1]/div/div/span[2]']
+INFO     2023-05-09 10:01:54 [core.until.cases:104]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-09 10:01:54 [core.until.cases:104]  : 执行关键字name='切换雷达渠道页面', key='iframe_enter', args=['//iframe[contains(@src,"/marketing/interactRadar/channel")]']
+INFO     2023-05-09 10:01:54 [core.until.cases:104]  : 执行关键字name='点击添加渠道链接按钮', key='click', args=['//span[contains(text(),"添加渠道链接")]']
+INFO     2023-05-09 10:01:55 [core.until.cases:104]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-09 10:01:55 [core.until.cases:104]  : 执行关键字name='搜索框输入渠道名称', key='input', args=['//input[contains(@placeholder,"请输入搜索关键词，按回车搜索")]', 'zdh测试雷达渠道']
+INFO     2023-05-09 10:01:56 [core.until.cases:104]  : 执行关键字name='搜索框回车', key='keyboard_enter', args=['//input[contains(@placeholder,"请输入搜索关键词，按回车搜索")]']
+INFO     2023-05-09 10:01:56 [core.until.cases:104]  : 执行关键字name='点击复选框全选按钮', key='click', args=['//label[contains(text()," 全选")]/span/input']
+INFO     2023-05-09 10:01:57 [core.until.cases:104]  : 执行关键字name='点击生成渠道码链接按钮', key='click', args=['//span[contains(text(),"生成渠道码链接")]']
+INFO     2023-05-09 10:01:57 [core.until.cases:104]  : 执行关键字name='断言提示信息', key='assert_text', args=['//div[@class="ivu-notice-title"]', '添加成功']
+INFO     2023-05-09 10:01:58 [webdriver_helper:226]  : assert (text='添加成功') == (element.text='添加成功')
+INFO     2023-05-09 10:01:58 [core.until.cases:111]  : 测试用例执行结束

@@ -1,0 +1,14 @@
+INFO     2023-05-09 10:49:16 [core.until.cases:81]  : 测试用例开始执行
+INFO     2023-05-09 10:49:16 [core.until.cases:91]  : 解析用例名称:case_name='验证输入部分内容多条件查询', fixture_name='admin_driver'
+INFO     2023-05-09 10:49:17 [core.until.cases:104]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-09 10:49:17 [core.until.cases:104]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-09 10:49:18 [core.until.cases:104]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', 'zdh']
+INFO     2023-05-09 10:49:18 [core.until.cases:104]  : 执行关键字name='搜索框输入创建人用户名', key='input', args=['//label[contains(text(),"创建人")]/../div/div/input', '神']
+INFO     2023-05-09 10:49:19 [core.until.cases:104]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]']
+INFO     2023-05-09 10:49:19 [core.until.cases:104]  : 执行关键字name='断言提示信息', key='assert_list_in', args=['//tbody[1]/tr[1]', 'zdh测试正常创建互动雷达标题,zdh测试正常创建互动雷达链接标题,zdh测试正常创建互动雷达链接摘要,神秘人']
+INFO     2023-05-09 10:49:21 [webdriver_helper:311]  : assert (text=['zdh测试正常创建互动雷达标题', 'zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', '神秘人']) in (element.text='zdh测试正常创建互动雷达链接标题\nzdh测试正常创建互动雷达链接摘要\nzdh测试正常创建互动雷达标题\n神秘人\n0\n0\n2023-05-09 10:48:27')
+INFO     2023-05-09 10:49:21 [webdriver_helper:313]  : assert (i='zdh测试正常创建互动雷达标题') in (element.text='zdh测试正常创建互动雷达链接标题\nzdh测试正常创建互动雷达链接摘要\nzdh测试正常创建互动雷达标题\n神秘人\n0\n0\n2023-05-09 10:48:27')
+INFO     2023-05-09 10:49:21 [webdriver_helper:313]  : assert (i='zdh测试正常创建互动雷达链接标题') in (element.text='zdh测试正常创建互动雷达链接标题\nzdh测试正常创建互动雷达链接摘要\nzdh测试正常创建互动雷达标题\n神秘人\n0\n0\n2023-05-09 10:48:27')
+INFO     2023-05-09 10:49:21 [webdriver_helper:313]  : assert (i='zdh测试正常创建互动雷达链接摘要') in (element.text='zdh测试正常创建互动雷达链接标题\nzdh测试正常创建互动雷达链接摘要\nzdh测试正常创建互动雷达标题\n神秘人\n0\n0\n2023-05-09 10:48:27')
+INFO     2023-05-09 10:49:21 [webdriver_helper:313]  : assert (i='神秘人') in (element.text='zdh测试正常创建互动雷达链接标题\nzdh测试正常创建互动雷达链接摘要\nzdh测试正常创建互动雷达标题\n神秘人\n0\n0\n2023-05-09 10:48:27')
+INFO     2023-05-09 10:49:21 [core.until.cases:111]  : 测试用例执行结束
