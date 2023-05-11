@@ -13,6 +13,6 @@ if __name__ == "__main__":
 
     if settings["allure_gen"]:
         os.system(f"allure generate ./temp/allure_results -o {files_name} --clean")  # 生成报告
-        sendFeiShu(get_ip(), report_path)
+        # sendFeiShu(get_ip(), report_path)
     if settings["allure_show"]:
         os.system(f"allure open -p 666  {files_name}")

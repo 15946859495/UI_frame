@@ -192,7 +192,6 @@ class KeyWord:
         Select(element).select_by_visible_text(text)
 
     def get_text(self, loc):
-
         el = self.find_element(loc)
 
         return el.text
@@ -224,7 +223,6 @@ class KeyWord:
         js_sentence_args = "border: 5px solid red;"
         self.driver.execute_script(js_sentence_light, element, js_sentence_args)
         logger.info(f"assert ({text=}) == ({element.text=})")
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         assert text == element.text
 
     def assert_text_in(self, loc, text):
@@ -240,7 +238,6 @@ class KeyWord:
         js_sentence_args = "border: 5px solid red;"
         self.driver.execute_script(js_sentence_light, element, js_sentence_args)
         logger.info(f"assert ({text=}) in ({element.text=})")
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         assert text in element.text
 
     def assert_mandatory_field(self, text: str):
@@ -253,7 +250,6 @@ class KeyWord:
         self.sleep(0.5)
         msg = self.driver.page_source
 
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         text = text.replace(' ', '').split(',')
         logger.info(f"({text})")
         for i in text:
@@ -270,7 +266,6 @@ class KeyWord:
         self.sleep(0.5)
         msg = self.driver.page_source
 
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         text = text.replace(' ', '').split(',')
         logger.info(f"({text})")
         for i in text:
@@ -290,9 +285,9 @@ class KeyWord:
         js_sentence_args = "border: 5px solid red;"
         self.driver.execute_script(js_sentence_light, element, js_sentence_args)
         msg = element.text.split('\n')
-        text = text.replace(' ', '').split(',')
+        # text = text.replace(' ', '').split(',')   #  去掉空格后再分组
+        text = text.split(',')
         logger.info(f"assert ({text=}) in ({msg=})")
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         for i in text:
             logger.info(f"assert ({i=}) in ({msg=})")
             assert i in msg
@@ -306,7 +301,6 @@ class KeyWord:
         """
         self.sleep(0.5)
         element = self.find_element(loc)
-        allure.attach(self.driver.get_screenshot_as_png(), "断言截图")
         text = text.replace(' ', '').split(',')
         logger.info(f"assert ({text=}) in ({element.text=})")
         for i in text:

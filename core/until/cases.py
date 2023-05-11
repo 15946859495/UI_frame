@@ -6,7 +6,6 @@
 @Describe: ... 
 """
 
-
 import logging
 import time
 import unittest
@@ -26,7 +25,7 @@ def handle_name(s):
         r = s.index(")")
 
         case_name = s[:l]  # 用例名称
-        fixture_name = s[l + 1 : r]  # 夹具名称
+        fixture_name = s[l + 1: r]  # 夹具名称
 
         return case_name, fixture_name
     except:
@@ -93,7 +92,7 @@ def create_pytest_case(suite_list):
             driver = request.getfixturevalue(fixture_name)
             kw = KeyWord(driver)
             kw.iframe_exit()
-            if "码" in case_name:
+            if "hq" in case_name:
                 kw.click("/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span")
             kw.refresh()
             # 根据excel内容进行关键字的调用
@@ -104,12 +103,15 @@ def create_pytest_case(suite_list):
                 logger.info(f"执行关键字{name=}, {key=}, {args=}")
 
                 with allure.step(name):  # 在allure显式测试步骤
-                    func = getattr(kw, key)  # 通过反射，难道关键字执行函数
-                    func(*args)  # 调用关键字函数
-
-                # allure.attach(driver.get_screenshot_as_png(), name)  #截图
+                    try:
+                        func = getattr(kw, key)  # 通过反射，难道关键字执行函数
+                        func(*args)  # 调用关键字函数
+                    except Exception as error:
+                        allure.attach(driver.get_screenshot_as_png(), name) #截图
+                        raise error
             logger.info("测试用例执行结束")
-            time.sleep(0.5)     # 硬件条件勉强支持脚本运行，不时会影响元素定位，故此处设置每个用例执行结束后等待一段时间
+            # time.sleep(0.5)  # 硬件条件勉强支持脚本运行，不时会影响元素定位，故此处设置每个用例执行结束后等待一段时间
+
         test_list.append(test_abc)  # 函数加入到列表
 
     return test_list  # 返回列表，列表可能有多个用例
