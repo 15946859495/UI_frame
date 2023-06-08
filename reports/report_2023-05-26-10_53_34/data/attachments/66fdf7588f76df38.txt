@@ -1,0 +1,13 @@
+INFO     2023-05-26 10:41:23 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 10:41:23 [core.until.cases:90]  : 解析用例名称:case_name='验证输入部分内容单条件模糊查询', fixture_name='admin_driver'
+INFO     2023-05-26 10:41:24 [core.until.cases:103]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-26 10:41:25 [core.until.cases:103]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-26 10:41:25 [core.until.cases:103]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', 'zdh']
+INFO     2023-05-26 10:41:25 [core.until.cases:103]  : 执行关键字name='搜索框回车', key='keyboard_enter', args=['//label[contains(text(),"雷达标题")]/../div/div/input']
+INFO     2023-05-26 10:41:26 [core.until.cases:103]  : 执行关键字name='断言互动雷达信息在列表内', key='assert_text_in_list', args=['//tbody[1]/tr[1]', 'zdh测试正常创建互动雷达标题,zdh测试正常创建互动雷达链接标题,zdh测试正常创建互动雷达链接摘要,神秘人']
+INFO     2023-05-26 10:41:27 [webdriver_helper:291]  : assert (text=['zdh测试正常创建互动雷达标题', 'zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', '神秘人']) in (msg=['zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', 'zdh测试正常创建互动雷达标题', '神秘人', '0', '0', '2023-05-26 10:40:35'])
+INFO     2023-05-26 10:41:27 [webdriver_helper:293]  : assert (i='zdh测试正常创建互动雷达标题') in (msg=['zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', 'zdh测试正常创建互动雷达标题', '神秘人', '0', '0', '2023-05-26 10:40:35'])
+INFO     2023-05-26 10:41:27 [webdriver_helper:293]  : assert (i='zdh测试正常创建互动雷达链接标题') in (msg=['zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', 'zdh测试正常创建互动雷达标题', '神秘人', '0', '0', '2023-05-26 10:40:35'])
+INFO     2023-05-26 10:41:27 [webdriver_helper:293]  : assert (i='zdh测试正常创建互动雷达链接摘要') in (msg=['zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', 'zdh测试正常创建互动雷达标题', '神秘人', '0', '0', '2023-05-26 10:40:35'])
+INFO     2023-05-26 10:41:27 [webdriver_helper:293]  : assert (i='神秘人') in (msg=['zdh测试正常创建互动雷达链接标题', 'zdh测试正常创建互动雷达链接摘要', 'zdh测试正常创建互动雷达标题', '神秘人', '0', '0', '2023-05-26 10:40:35'])
+INFO     2023-05-26 10:41:27 [core.until.cases:112]  : 测试用例执行结束

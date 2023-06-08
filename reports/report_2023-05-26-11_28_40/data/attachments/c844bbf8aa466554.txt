@@ -1,0 +1,40 @@
+INFO     2023-05-26 11:20:20 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:20:20 [core.until.cases:90]  : 解析用例名称:case_name='精准查询个人活动码hq', fixture_name='admin_driver'
+INFO     2023-05-26 11:20:22 [core.until.cases:103]  : 执行关键字name='点击导航栏渠道活码工具选项', key='click', args=["//span[contains(text(),'渠道活码工具')]"]
+INFO     2023-05-26 11:20:26 [core.until.cases:103]  : 执行关键字name='点击导航栏活动码选项', key='click', args=["//span[contains(text(),'活动码')]"]
+INFO     2023-05-26 11:20:27 [core.until.cases:103]  : 执行关键字name='点击导航栏个人活动码选项', key='click', args=["//span[contains(text(),'个人活动码')]"]
+INFO     2023-05-26 11:20:28 [core.until.cases:103]  : 执行关键字name='切换个人活动码主页', key='iframe_enter', args=['//iframe[@src="/marketing/personalActivityCode/page"]']
+INFO     2023-05-26 11:20:31 [core.until.cases:103]  : 执行关键字name='输入完整活动码名称', key='input', args=['//input[@placeholder="请输入"]', 'zdh测试正常创建个人活动码名称']
+INFO     2023-05-26 11:20:31 [core.until.cases:103]  : 执行关键字name='点击渠道输入框', key='click', args=['/html/body/div[1]/div/div/div/div/div[1]/form/div/div[2]/div/div/div/div/div']
+INFO     2023-05-26 11:20:32 [core.until.cases:103]  : 执行关键字name='选择大渠道', key='click', args=['//div[contains(text(),"上海")]']
+INFO     2023-05-26 11:20:32 [core.until.cases:103]  : 执行关键字name='选择中渠道', key='click', args=['//div[contains(text(),"浦东")]']
+INFO     2023-05-26 11:20:33 [core.until.cases:103]  : 执行关键字name='选择小渠道', key='click', args=['//div[contains(text(),"来福士门店")]', '  ']
+INFO     2023-05-26 11:20:33 [core.until.cases:103]  : 执行关键字name='点击确定按钮', key='click', args=['//span[contains(text(),"确定")]']
+INFO     2023-05-26 11:20:33 [core.until.cases:103]  : 执行关键字name='点击区域输入框', key='click', args=['/html/body/div[1]/div/div/div/div/div[1]/form/div/div[3]/div/div/div/div/div']
+INFO     2023-05-26 11:20:34 [core.until.cases:103]  : 执行关键字name='选择大区', key='click', args=['//div[contains(text(),"五件套大区1")]']
+INFO     2023-05-26 11:20:35 [core.until.cases:103]  : 执行关键字name='选择小区', key='click', args=['//div[contains(text(),"五件套小区1")]']
+INFO     2023-05-26 11:20:35 [core.until.cases:103]  : 执行关键字name='点击确定按钮', key='click', args=['/html/body/div[3]/div[2]/div/div/div[3]/div/button[3]/span']
+INFO     2023-05-26 11:20:35 [core.until.cases:103]  : 执行关键字name='门店输入框输入门店名称', key='input', args=['/html/body/div[1]/div/div/div/div/div[1]/form/div/div[4]/div/div/div/div[1]/div/input', '五件套店U2']
+INFO     2023-05-26 11:20:36 [core.until.cases:103]  : 执行关键字name='下拉列表选择门店', key='click', args=['//li[contains(text(),"五件套店U2")]']
+INFO     2023-05-26 11:20:37 [core.until.cases:103]  : 执行关键字name='收起门店下拉列表', key='click', args=['//label[text()="关联门店"]/../div/div/div/div/i']
+INFO     2023-05-26 11:20:37 [core.until.cases:103]  : 执行关键字name='主理人输入框输入主理人名', key='input', args=['/html/body/div[1]/div/div/div/div/div[1]/form/div/div[5]/div/div/div/div[1]/div/input', 'U2店长']
+INFO     2023-05-26 11:20:38 [core.until.cases:103]  : 执行关键字name='等待1s', key='sleep', args=[1]
+INFO     2023-05-26 11:20:39 [core.until.cases:103]  : 执行关键字name='下拉列表选择主理人', key='click', args=['//li[contains(text(),"U2店长")]']
+INFO     2023-05-26 11:20:39 [core.until.cases:103]  : 执行关键字name='收起主理人下拉列表', key='click', args=['//label[text()="主理人"]/../div/div/div/div/i']
+INFO     2023-05-26 11:20:40 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]']
+INFO     2023-05-26 11:20:41 [core.until.cases:103]  : 执行关键字name='断言活动码信息在列表中', key='assert_text_in_list', args=['//tbody[1]', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2,上海,浦东,来福士门店,五件套大区1,五件套小区1,U2店长,手机号：17521160379,五件套店U2,25-30万,神秘人,zdh测试个人活动码欢迎语1,神秘人']
+INFO     2023-05-26 11:20:42 [webdriver_helper:291]  : assert (text=['zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', '神秘人', 'zdh测试个人活动码欢迎语1', '神秘人']) in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='zdh测试正常创建个人活动码名称_U2店长_五件套店U2') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='上海') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='浦东') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='来福士门店') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='五件套大区1') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='五件套小区1') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='U2店长') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='手机号：17521160379') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='五件套店U2') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='25-30万') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='神秘人') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='zdh测试个人活动码欢迎语1') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [webdriver_helper:293]  : assert (i='神秘人') in (msg=['1', 'zdh测试正常创建个人活动码名称_U2店长_五件套店U2', '上海', '浦东', '来福士门店', '五件套大区1', '五件套小区1', 'U2店长', '手机号：17521160379', '五件套店U2', '25-30万', 'zdh测试个人活动码欢迎语1', '2023-05-26 11:19:19', '神秘人'])
+INFO     2023-05-26 11:20:42 [core.until.cases:112]  : 测试用例执行结束

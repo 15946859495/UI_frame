@@ -13,8 +13,8 @@ from core.until.datas import load_case_by_excel
 i = 0
 
 # 多Excel 一下代码全部循环
-for file in Path("temp").glob("test_*.xlsx"):
-# for file in Path("core/testcase").glob("test_*.xlsx"):
+# for file in Path("temp").glob("test_*.xlsx"):
+for file in Path("core/testcase").glob("test_*.xlsx"):
 
     suite_list = load_case_by_excel(file)  # 从excel加载数据
     test_xiaocai = create_pytest_case(suite_list)  # test开头的列表

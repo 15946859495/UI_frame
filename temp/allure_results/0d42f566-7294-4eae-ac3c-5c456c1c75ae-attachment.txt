@@ -1,0 +1,18 @@
+INFO     2023-05-31 09:46:12 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-31 09:46:12 [core.until.cases:90]  : 解析用例名称:case_name='用户信息主页模糊查询hq', fixture_name='admin_driver'
+INFO     2023-05-31 09:46:13 [core.until.cases:103]  : 执行关键字name='点击导航栏客户联系选项', key='click', args=["//span[contains(text(),'客户联系')]"]
+INFO     2023-05-31 09:46:14 [core.until.cases:103]  : 执行关键字name='点击导航栏用户信息选项', key='click', args=["//span[contains(text(),'用户信息')]"]
+INFO     2023-05-31 09:46:15 [core.until.cases:103]  : 执行关键字name='切换用户信息主页页面', key='iframe_enter', args=['//iframe[@src="/im/relation/userInfo"]']
+INFO     2023-05-31 09:46:15 [core.until.cases:103]  : 执行关键字name='输入用户名', key='input', args=['//input[@placeholder="请输入用户名"]', '罗']
+INFO     2023-05-31 09:46:16 [core.until.cases:103]  : 执行关键字name='输入手机号码', key='input', args=['//input[@placeholder="请输入手机号"]', 17890873456]
+INFO     2023-05-31 09:46:16 [core.until.cases:103]  : 执行关键字name='输入地区', key='input', args=['//input[@placeholder="请选择"]', '福建 / 福州']
+INFO     2023-05-31 09:46:16 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[text()="查询"]']
+INFO     2023-05-31 09:46:17 [core.until.cases:103]  : 执行关键字name='断言用户信息在列表内', key='assert_text_in_list', args=['//tbody[1]/tr[1]', '--,罗老师,17890873456,福建,福州,智慧']
+INFO     2023-05-31 09:46:18 [webdriver_helper:291]  : assert (text=['--', '罗老师', '17890873456', '福建', '福州', '智慧']) in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='--') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='罗老师') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='17890873456') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='福建') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='福州') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [webdriver_helper:293]  : assert (i='智慧') in (msg=['--', '罗老师', '17890873456', '福建', '福州', '智慧'])
+INFO     2023-05-31 09:46:18 [core.until.cases:112]  : 测试用例执行结束

@@ -16,6 +16,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 import autoit
 from webdriver_helper import get_webdriver
+from core.until.open_tool import read_excel_all
 
 
 class Commonshare(object):
@@ -38,6 +39,7 @@ class Commonshare(object):
         driver.maximize_window()
         # self.driver = driver
         # self.wait = WebDriverWait(driver, 20)
+
     # def __init__(self, driver: Chrome):
     #     self.driver = driver
     #     self.wait = WebDriverWait(driver, 10)  # 每次最多等待10秒显式等待
@@ -85,6 +87,7 @@ class Commonshare(object):
                 return self.driver.find_elements(by, value)[number]
             else:
                 return self.driver.find_element(by, value)
+
         element = self.wait.until(f)
         if "app-grid" not in value:
             js_sentence_light = "arguments[0].setAttribute('style', arguments[1]);"
@@ -183,6 +186,44 @@ class Commonshare(object):
     def get_text(self, loc):
         el = self.element = self.find_element(loc)
         return el.text
+
+    def assert_list_export(self, loc):
+        msg = self.driver.find_elements(By.XPATH, loc)
+        text_list = []
+        del msg[-1]
+        for i in msg:
+            i = i.text.replace(' ', '').split('\n')
+            del i[2]
+            text_list.append(i)
+        list_text = read_excel_all('C:\\Users\\\wangy\\Downloads\\运营号数据.xlsx')
+        for i in text_list:
+            assert i in list_text
+
+    def hd(self, count):
+        """
+        滑动滚动条，每次滑动长度固定为50
+        :param count:滑动次数
+        :return:
+        """
+        for w in range(count):
+            # 第一个参数x是横向距离，第二个参数y是纵向距离
+            js = 'window.scrollBy(0, 200)'  # 90表示滚动条下滑的长度（位置）
+            driver = self.driver
+            driver.execute_script(js)
+            time.sleep(0.5)
+
+    def hdx(self, count):
+        """
+        滑动滚动条，每次滑动长度固定为50
+        :param count:滑动次数
+        :return:
+        """
+        for w in range(count):
+            # 第一个参数x是横向距离，第二个参数y是纵向距离
+            js = 'window.scrollBy(50, 0)'  # 90表示滚动条下滑的长度（位置）
+            driver = self.driver
+            driver.execute_script(js)
+            time.sleep(0.5)
 
     def upload(self, loc, file):
         """

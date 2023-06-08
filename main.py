@@ -11,8 +11,9 @@ if __name__ == "__main__":
     pytest.main()  # 不要传递参数
     files_name, report_path = mkdir()
 
+    ip = get_ip()
     if settings["allure_gen"]:
         os.system(f"allure generate ./temp/allure_results -o {files_name} --clean")  # 生成报告
-        # sendFeiShu(get_ip(), report_path)
+        sendFeiShu(ip, report_path)
     if settings["allure_show"]:
-        os.system(f"allure open -p 666  {files_name}")
+        os.system(f"allure open -h {ip}  -p 666  {files_name}")

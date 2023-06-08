@@ -1,0 +1,12 @@
+INFO     2023-05-26 11:06:16 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:06:16 [core.until.cases:90]  : 解析用例名称:case_name='必填项为空创建门店活动码hq', fixture_name='admin_driver'
+INFO     2023-05-26 11:06:17 [core.until.cases:103]  : 执行关键字name='点击导航栏渠道活码工具选项', key='click', args=["//span[contains(text(),'渠道活码工具')]"]
+INFO     2023-05-26 11:06:18 [core.until.cases:103]  : 执行关键字name='点击导航栏活动码选项', key='click', args=["//span[contains(text(),'活动码')]"]
+INFO     2023-05-26 11:06:18 [core.until.cases:103]  : 执行关键字name='点击导航栏门店活动码选项', key='click', args=["//span[contains(text(),'门店活动码')]"]
+INFO     2023-05-26 11:06:19 [core.until.cases:103]  : 执行关键字name='切换门店活动码主页', key='iframe_enter', args=['//iframe[@src="/marketing/storeActivityCode/page"]']
+INFO     2023-05-26 11:06:19 [core.until.cases:103]  : 执行关键字name='点击创建门店活动码按钮', key='click', args=["//span[contains(text(),'创建门店活码')]"]
+INFO     2023-05-26 11:06:21 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 11:06:21 [core.until.cases:103]  : 执行关键字name='切换创建门店活动码页面', key='iframe_enter', args=['//iframe[@src="/marketing/storeActivityCode/create"]']
+INFO     2023-05-26 11:06:22 [core.until.cases:103]  : 执行关键字name='点击保存并生成活动码按钮', key='click', args=["//div[@class='buttonContainer']/button[2]/span"]
+INFO     2023-05-26 11:06:22 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 11:06:22 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text_in', args=['/html/body/div[4]/div[1]', '未选择主理人']

@@ -1,0 +1,10 @@
+INFO     2023-05-26 11:16:26 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:16:26 [core.until.cases:90]  : 解析用例名称:case_name='验证输入不存在内容多条件查询', fixture_name='admin_driver'
+INFO     2023-05-26 11:16:27 [core.until.cases:103]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-26 11:16:27 [core.until.cases:103]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-26 11:16:28 [core.until.cases:103]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', '￥……￥￥￥#']
+INFO     2023-05-26 11:16:28 [core.until.cases:103]  : 执行关键字name='搜索框输入创建人用户名', key='input', args=['//label[contains(text(),"创建人")]/../div/div/input', '嘿嘿嘿']
+INFO     2023-05-26 11:16:29 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]']
+INFO     2023-05-26 11:16:29 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text', args=['//span[contains(text(),"暂无数据")]', '暂无数据']
+INFO     2023-05-26 11:16:30 [webdriver_helper:226]  : assert (text='暂无数据') == (element.text='暂无数据')
+INFO     2023-05-26 11:16:30 [core.until.cases:112]  : 测试用例执行结束

@@ -1,0 +1,22 @@
+INFO     2023-05-26 10:40:44 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 10:40:44 [core.until.cases:90]  : 解析用例名称:case_name='二次创建互动雷达', fixture_name='admin_driver'
+INFO     2023-05-26 10:40:45 [core.until.cases:103]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-26 10:40:46 [core.until.cases:103]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-26 10:40:46 [core.until.cases:103]  : 执行关键字name='点击创建雷达按钮', key='click', args=["//span[contains(text(),'创建雷达')]"]
+INFO     2023-05-26 10:40:47 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 10:40:47 [core.until.cases:103]  : 执行关键字name='切换创建互动雷达页面', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/create"]']
+INFO     2023-05-26 10:40:47 [core.until.cases:103]  : 执行关键字name='输入雷达标题', key='input', args=['//input[@placeholder="请输入雷达标题"]', '二次创建互动雷达标题']
+INFO     2023-05-26 10:40:47 [core.until.cases:103]  : 执行关键字name='输入雷达链接', key='input', args=['//input[@placeholder="请输入雷达链接"]', 'https://mp.weixin.qq.com/s/3mMxkuN6U987EKVs-e0AtA']
+INFO     2023-05-26 10:40:48 [core.until.cases:103]  : 执行关键字name='输入链接标题', key='input', args=['//input[@placeholder="请输入链接标题"]', '二次创建互动雷达链接标题']
+INFO     2023-05-26 10:40:49 [core.until.cases:103]  : 执行关键字name='输入链接摘要', key='input', args=['//textarea[@placeholder="请输入链接摘要"]', '二次创建互动雷达链接摘要']
+INFO     2023-05-26 10:40:49 [core.until.cases:103]  : 执行关键字name='点击选择封面按钮', key='click', args=['//button[contains(text(),"选择封面")]']
+INFO     2023-05-26 10:40:50 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 10:40:50 [core.until.cases:103]  : 执行关键字name='点击第一张图片', key='click', args=['//div[@class = "app-grid-flex"]/div[1]/div/div[1]/img']
+INFO     2023-05-26 10:40:52 [core.until.cases:103]  : 执行关键字name='点击图片右上角复选框', key='click', args=['//div[@class = "app-grid-flex"]/div[1]/div/div[2]/label/span/input']
+INFO     2023-05-26 10:40:52 [core.until.cases:103]  : 执行关键字name='点击选择图片页面确认按钮', key='click', args=['//span[contains(text(),"确定")]']
+INFO     2023-05-26 10:40:53 [core.until.cases:103]  : 执行关键字name='切换创建互动雷达页面', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/create"]']
+INFO     2023-05-26 10:40:53 [core.until.cases:103]  : 执行关键字name='点击创建互动雷达页面确认按钮', key='click', args=['//span[contains(text(),"确定")]']
+INFO     2023-05-26 10:40:53 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 10:40:53 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text', args=['//div[@class = "ivu-notice-notice-content"]/div', '创建成功']
+INFO     2023-05-26 10:40:54 [webdriver_helper:226]  : assert (text='创建成功') == (element.text='创建成功')
+INFO     2023-05-26 10:40:54 [core.until.cases:112]  : 测试用例执行结束

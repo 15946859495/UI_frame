@@ -27,19 +27,24 @@ class Login_zj(Commonshare):
         self.input('//input[@placeholder="请输入密码"]', pwd)
         # 点击登录按钮
         self.click("button;;;TAG_NAME")
-        self.click("//span[contains(text(),'人群包')]")
-        self.iframe_enter('//iframe[@src="/im/group/page"]')
-        self.click("//span[contains(text(),'创建人群包')]")
-        self.iframe_exit()
-        self.input('//input[@placeholder="人群包名称限20字"]', 'Zdh测试人群包名称')
-        self.input('//textarea', 'zdh测试人群包名称')
-        self.click('//span[text()="添加"]')
-        self.input('//input[@placeholder="请选择一级标签，支持键入搜索"]', '临时人群包')
-        self.click('//li[text()="临时人群包"]')
-        self.input('//input[@placeholder="请选择二级标签，支持键入搜索"]', '测试人群包')
-        self.click('//li[text()="测试人群包"]')
-        self.click('//span[text()="确定"]')
+        self.click('//span[text() = " 管  理"]')
+        self.click('//span[contains(text(),"席位管理")]')
+        self.iframe_enter('//iframe[@src="/dms/devicePc/page"]')
+        # self.assert_list_export('//tbody[1]/tr')
+        # self.hd(5)
+        # element = self.find_element('//span[text()="门店"]')
+        # self.driver.execute_script('arguments[0].scrollIntoView();', element)
+        # element = self.find_element('//span[text()="分配状态"]')
+        # self.driver.execute_script('arguments[0].scrollIntoView();', element)
+        a = self.get_text('//table')
+        dd = []
+        msg = self.driver.find_elements(By.XPATH, '//tbody[1]/tr')
+        for i in msg:
+            i = i.text.split('\n')
+            dd.append(i)
+        print(dd)
         self.sleep(10)
+        self.quite()
 
 
 if __name__ == '__main__':

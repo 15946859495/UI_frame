@@ -1,0 +1,9 @@
+INFO     2023-05-26 11:28:19 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:28:19 [core.until.cases:90]  : 解析用例名称:case_name='用户信息主页输入不存在信息查询hq', fixture_name='admin_driver'
+INFO     2023-05-26 11:28:22 [core.until.cases:103]  : 执行关键字name='点击导航栏客户联系选项', key='click', args=["//span[contains(text(),'客户联系')]"]
+INFO     2023-05-26 11:28:23 [core.until.cases:103]  : 执行关键字name='点击导航栏用户信息选项', key='click', args=["//span[contains(text(),'用户信息')]"]
+INFO     2023-05-26 11:28:23 [core.until.cases:103]  : 执行关键字name='切换用户信息主页页面', key='iframe_enter', args=['//iframe[@src="/im/relation/userInfo"]']
+INFO     2023-05-26 11:28:24 [core.until.cases:103]  : 执行关键字name='输入用户名', key='input', args=['//input[@placeholder="请输入用户名"]', 'wf1']
+INFO     2023-05-26 11:28:24 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[text()="查询"]']
+INFO     2023-05-26 11:28:25 [core.until.cases:103]  : 执行关键字name='断言提示消息', key='assert_text', args=['//div[3]/table/tbody/tr/td', '暂无数据']
+INFO     2023-05-26 11:28:26 [webdriver_helper:226]  : assert (text='暂无数据') == (element.text='')

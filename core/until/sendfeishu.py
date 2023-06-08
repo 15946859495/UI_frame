@@ -30,7 +30,7 @@ def sendFeiShu(ip, report_path):
         data = f"执行时间：\n{start} - {stop}\n耗时:{duration}\n执行通过用例数：{passed}\n执行失败用例数：{failed}\n" \
                f"阻塞用例数：{broken}\n执行跳过用例数：{skipped}\n未知用例数：{unknown}\n用例总数：{total}\n用例执行通过率：{pass_rate}%\n\n"
         # 机器人webhook地址
-        robot_url = 'https://open.feishu.cn/open-apis/bot/v2/hook/fc9e4e11-c45d-4507-b30b-6da6f26f2c5e'
+        robot_url = 'https://open.feishu.cn/open-apis/bot/v2/hook/403efa07-dcc8-4332-8e21-010431c228d5'
         # 发送内容
         payload = json.dumps({
             "msg_type": "post",

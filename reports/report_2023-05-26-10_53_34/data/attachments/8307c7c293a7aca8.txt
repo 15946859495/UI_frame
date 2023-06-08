@@ -1,0 +1,13 @@
+INFO     2023-05-26 10:51:22 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 10:51:22 [core.until.cases:90]  : 解析用例名称:case_name='精确查询人群包', fixture_name='admin_driver'
+INFO     2023-05-26 10:51:23 [core.until.cases:103]  : 执行关键字name='点击导航栏人群包选项', key='click', args=["//span[contains(text(),'人群包')]"]
+INFO     2023-05-26 10:51:23 [core.until.cases:103]  : 执行关键字name='切换人群包主页', key='iframe_enter', args=['//iframe[@src="/im/group/page"]']
+INFO     2023-05-26 10:51:23 [core.until.cases:103]  : 执行关键字name='搜索框输入查询内容', key='input', args=['//input[@placeholder="请输入"]', 'Zdh测试人群包名称1']
+INFO     2023-05-26 10:51:24 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=["//span[contains(text(),'查询')]"]
+INFO     2023-05-26 10:51:24 [core.until.cases:103]  : 执行关键字name='断言人群包信息在列表内', key='assert_text_in_list', args=['//tbody[1]/tr[1]', 'Zdh测试人群包名称1,Zdh测试人群包描述1,上海-跑圈大师2109,查看编辑删除复制重新计算']
+INFO     2023-05-26 10:51:25 [webdriver_helper:291]  : assert (text=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '查看编辑删除复制重新计算']) in (msg=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '12', '2023-05-26 10:51:22', '查看编辑删除复制重新计算'])
+INFO     2023-05-26 10:51:25 [webdriver_helper:293]  : assert (i='Zdh测试人群包名称1') in (msg=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '12', '2023-05-26 10:51:22', '查看编辑删除复制重新计算'])
+INFO     2023-05-26 10:51:25 [webdriver_helper:293]  : assert (i='Zdh测试人群包描述1') in (msg=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '12', '2023-05-26 10:51:22', '查看编辑删除复制重新计算'])
+INFO     2023-05-26 10:51:25 [webdriver_helper:293]  : assert (i='上海-跑圈大师2109') in (msg=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '12', '2023-05-26 10:51:22', '查看编辑删除复制重新计算'])
+INFO     2023-05-26 10:51:25 [webdriver_helper:293]  : assert (i='查看编辑删除复制重新计算') in (msg=['Zdh测试人群包名称1', 'Zdh测试人群包描述1', '上海-跑圈大师2109', '12', '2023-05-26 10:51:22', '查看编辑删除复制重新计算'])
+INFO     2023-05-26 10:51:25 [core.until.cases:112]  : 测试用例执行结束

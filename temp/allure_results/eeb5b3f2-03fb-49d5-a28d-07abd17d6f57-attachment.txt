@@ -1,0 +1,28 @@
+INFO     2023-05-31 09:35:12 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-31 09:35:12 [core.until.cases:90]  : 解析用例名称:case_name='正常修改互动雷达', fixture_name='admin_driver'
+INFO     2023-05-31 09:35:13 [core.until.cases:103]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-31 09:35:13 [core.until.cases:103]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-31 09:35:14 [core.until.cases:103]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', '二次创建互动雷达标题']
+INFO     2023-05-31 09:35:14 [core.until.cases:103]  : 执行关键字name='搜索框输入创建人用户名', key='input', args=['//label[contains(text(),"创建人")]/../div/div/input', '神秘人']
+INFO     2023-05-31 09:35:15 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]', ' ']
+INFO     2023-05-31 09:35:15 [core.until.cases:103]  : 执行关键字name='等待', key='sleep', args=[1]
+INFO     2023-05-31 09:35:16 [core.until.cases:103]  : 执行关键字name='点击修改按钮', key='click', args=['//tbody[1]/tr/td[1]//div/div/span[3]']
+INFO     2023-05-31 09:35:17 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-31 09:35:17 [core.until.cases:103]  : 执行关键字name='切换修改互动雷达页面', key='iframe_enter', args=['//iframe[contains(@src,"/marketing/interactRadar/update")]']
+INFO     2023-05-31 09:35:17 [core.until.cases:103]  : 执行关键字name='追加雷达标题内容', key='input', args=['//input[@placeholder="请输入雷达标题"]', 1]
+INFO     2023-05-31 09:35:18 [core.until.cases:103]  : 执行关键字name='清空雷达链接输入框内容', key='clear', args=['//input[@placeholder="请输入雷达链接"]']
+INFO     2023-05-31 09:35:18 [core.until.cases:103]  : 执行关键字name='重新输入雷达链接', key='input', args=['//input[@placeholder="请输入雷达链接"]', 'https://mp.weixin.qq.com/s/3mMxkuN6U987EKVs-e0AtA']
+INFO     2023-05-31 09:35:19 [core.until.cases:103]  : 执行关键字name='追加输入链接标题内容', key='input', args=['//input[@placeholder="请输入链接标题"]', 1]
+INFO     2023-05-31 09:35:19 [core.until.cases:103]  : 执行关键字name='追加输入链接摘要内容', key='input', args=['//textarea[@placeholder="请输入链接摘要"]', 1]
+INFO     2023-05-31 09:35:20 [core.until.cases:103]  : 执行关键字name='点击选择封面按钮', key='click', args=['//button[contains(text(),"选择封面")]']
+INFO     2023-05-31 09:35:20 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-31 09:35:20 [core.until.cases:103]  : 执行关键字name='等待.05s', key='sleep', args=[0.5]
+INFO     2023-05-31 09:35:21 [core.until.cases:103]  : 执行关键字name='点击第二张图片', key='click', args=['//div[@class = "app-grid-flex"]/div[2]/div/div[1]/img']
+INFO     2023-05-31 09:35:26 [core.until.cases:103]  : 执行关键字name='点击图片右上角复选框', key='click', args=['//div[@class = "app-grid-flex"]/div[2]/div/div[2]/label/span/input']
+INFO     2023-05-31 09:35:31 [core.until.cases:103]  : 执行关键字name='点击选择图片页面确认按钮', key='click', args=['//span[contains(text(),"确定")]']
+INFO     2023-05-31 09:35:32 [core.until.cases:103]  : 执行关键字name='切换修改互动雷达页面', key='iframe_enter', args=['//iframe[contains(@src,"/marketing/interactRadar/update")]']
+INFO     2023-05-31 09:35:32 [core.until.cases:103]  : 执行关键字name='点击修改互动雷达页面确认按钮', key='click', args=['//span[contains(text(),"确定")]']
+INFO     2023-05-31 09:35:32 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-31 09:35:32 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text', args=['//div[@class = "ivu-notice-notice-content"]/div', '更新成功']
+INFO     2023-05-31 09:35:33 [webdriver_helper:226]  : assert (text='更新成功') == (element.text='更新成功')
+INFO     2023-05-31 09:35:33 [core.until.cases:112]  : 测试用例执行结束

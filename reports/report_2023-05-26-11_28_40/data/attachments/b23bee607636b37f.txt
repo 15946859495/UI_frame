@@ -1,0 +1,23 @@
+INFO     2023-05-26 11:26:48 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:26:48 [core.until.cases:90]  : 解析用例名称:case_name='用户列表模糊查询hq', fixture_name='admin_driver'
+INFO     2023-05-26 11:26:50 [core.until.cases:103]  : 执行关键字name='点击导航栏客户联系选项', key='click', args=["//span[contains(text(),'客户联系')]"]
+INFO     2023-05-26 11:26:50 [core.until.cases:103]  : 执行关键字name='点击导航栏用户管理选项', key='click', args=["//span[contains(text(),'用户管理')]"]
+INFO     2023-05-26 11:26:51 [core.until.cases:103]  : 执行关键字name='点击导航栏用户列表选项选项', key='click', args=["//span[contains(text(),'用户列表')]"]
+INFO     2023-05-26 11:26:51 [core.until.cases:103]  : 执行关键字name='切换用户列表主页', key='iframe_enter', args=['//iframe[@src="/im/relation/page"]']
+INFO     2023-05-26 11:26:52 [core.until.cases:103]  : 执行关键字name='输入运营号昵称', key='input', args=['//input[@placeholder="请输入运营号昵称"]', '流量池']
+INFO     2023-05-26 11:26:52 [core.until.cases:103]  : 执行关键字name='输入好友手机号', key='input', args=['//input[@placeholder="请输入好友手机号"]', 18916794689]
+INFO     2023-05-26 11:26:53 [core.until.cases:103]  : 执行关键字name='输入unionID', key='input', args=['//input[@placeholder="请输入unionID"]', 'oJGOG5hcN34wKXfSrI49T_5Rll5M']
+INFO     2023-05-26 11:26:53 [core.until.cases:103]  : 执行关键字name='输入标签名', key='input', args=['//input[@placeholder="请输入标签名"]', '测试人群包']
+INFO     2023-05-26 11:26:54 [core.until.cases:103]  : 执行关键字name='输入查询时间段', key='input', args=['//input[@placeholder="请选择时间"]', '2023-05-24 - 2023-05-30']
+INFO     2023-05-26 11:26:54 [core.until.cases:103]  : 执行关键字name='输入好友微信昵称', key='input', args=['//input[@placeholder="请输入微信昵称"]', '我想我忘了']
+INFO     2023-05-26 11:26:55 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=["//span[contains(text(),'查询')]"]
+INFO     2023-05-26 11:26:55 [core.until.cases:103]  : 执行关键字name='断言人群包信息在列表内', key='assert_text_in_list', args=['//tbody[1]/tr[1]', '微信昵称：我想我忘了,unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M,微信手机号：18916794689,测试人群包,企业微信昵称：流量池-蔡新强,手机号：15946859495,2023-05-24 16:59:30']
+INFO     2023-05-26 11:26:56 [webdriver_helper:291]  : assert (text=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '2023-05-24 16:59:30']) in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='微信昵称：我想我忘了') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='微信手机号：18916794689') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='测试人群包') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='企业微信昵称：流量池-蔡新强') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='手机号：15946859495') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [webdriver_helper:293]  : assert (i='2023-05-24 16:59:30') in (msg=['微信昵称：我想我忘了', 'unionId：oJGOG5hcN34wKXfSrI49T_5Rll5M', '微信手机号：18916794689', '测试人群包', '企业微信昵称：流量池-蔡新强', '手机号：15946859495', '微信号：p-ejump8', '2023-05-24 16:59:30'])
+INFO     2023-05-26 11:26:56 [core.until.cases:112]  : 测试用例执行结束

@@ -44,7 +44,20 @@ def read_excel(path_excel):
     return table_list
 
 
+def read_excel_all(path_excel):
+    """读取列表第一行数据"""
+    table = xlrd.open_workbook(path_excel)
+    table_sheet = table.sheets()[0]
+    text_list = []
+    for row in range(table_sheet.nrows):
+        table_list = table_sheet.row_values(row)
+        a = [i.replace(u'\xa0', '').strip() for i in table_list if i != '']
+        text_list.append(a)
+    return text_list
+
+
 if __name__ == '__main__':
-    print(check_download_file("C:\\Users\\\wangy\\Downloads", "运营号数据.xlsx"))
+    read_excel_all("C:\\Users\\\wangy\\Downloads\\运营号数据.xlsx")
+    # print(check_download_file("C:\\Users\\\wangy\\Downloads", "运营号数据.xlsx"))
     # print(read_excel("C:\\Users\\\wangy\\Downloads\\运营号数据.xlsx"))
     # clear_download_file("C:\\Users\\\wangy\\Downloads", "互动雷达.xlsx")

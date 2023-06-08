@@ -1,0 +1,14 @@
+INFO     2023-05-31 09:45:51 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-31 09:45:51 [core.until.cases:90]  : 解析用例名称:case_name='用户流失列表不存在内容查询hq', fixture_name='admin_driver'
+INFO     2023-05-31 09:45:52 [core.until.cases:103]  : 执行关键字name='点击导航栏客户联系选项', key='click', args=["//span[contains(text(),'客户联系')]"]
+INFO     2023-05-31 09:45:53 [core.until.cases:103]  : 执行关键字name='点击导航栏用户管理选项', key='click', args=["//span[contains(text(),'用户管理')]"]
+INFO     2023-05-31 09:45:53 [core.until.cases:103]  : 执行关键字name='点击导航栏用户流失列表选项选项', key='click', args=["//span[contains(text(),'用户流失列表')]"]
+INFO     2023-05-31 09:45:54 [core.until.cases:103]  : 执行关键字name='切换用户流失列表主页', key='iframe_enter', args=['//iframe[@src="/im/relation/userChurn"]']
+INFO     2023-05-31 09:45:54 [core.until.cases:103]  : 执行关键字name='输入unionID', key='input', args=['//label[text()="unionID"]/../div/div/input', 'oJGOG5rJew6wuWHKSLxmmWfJrSkA']
+INFO     2023-05-31 09:45:55 [core.until.cases:103]  : 执行关键字name='输入好友微信昵称', key='input', args=['//label[text()="微信昵称"]/../div/div/input', '京东摩西小D ｜日常价']
+INFO     2023-05-31 09:45:55 [core.until.cases:103]  : 执行关键字name='输入运营号昵称', key='input', args=['//label[text()="运营号"]/../div/div/input', '流量池-蔡新强s']
+INFO     2023-05-31 09:45:56 [core.until.cases:103]  : 执行关键字name='输入查询时间段', key='input', args=['//input[@placeholder="选择日期"]', '2022-12-21  - 2022-12-22']
+INFO     2023-05-31 09:45:56 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=["//span[contains(text(),'查询')]"]
+INFO     2023-05-31 09:45:57 [core.until.cases:103]  : 执行关键字name='断言列表内容', key='assert_text', args=['//span[contains(text(),"暂无数据")]', '暂无数据']
+INFO     2023-05-31 09:45:58 [webdriver_helper:226]  : assert (text='暂无数据') == (element.text='暂无数据')
+INFO     2023-05-31 09:45:58 [core.until.cases:112]  : 测试用例执行结束

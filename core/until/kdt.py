@@ -9,6 +9,7 @@ import time
 from shutil import rmtree
 
 import allure
+import unicodedata
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -23,7 +24,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_helper import debugger, get_webdriver, logger
 import autoit
-from core.until.open_tool import check_download_file, clear_download_file, read_excel
+from core.until.open_tool import check_download_file, clear_download_file, read_excel, read_excel_all
 from selenium.webdriver.chrome.options import Options
 from core.until.settings import settings
 
@@ -290,7 +291,7 @@ class KeyWord:
         logger.info(f"assert ({text=}) in ({msg=})")
         for i in text:
             logger.info(f"assert ({i=}) in ({msg=})")
-            assert i in msg
+            assert i in str(msg)
 
     def assert_list_in(self, loc, text):
         """
@@ -329,6 +330,47 @@ class KeyWord:
                 assert i in msg
         else:
             return False
+
+    def assert_list_in_export(self, loc, text):
+        ys1, ys2 = loc.split(',')
+        msg1 = self.get_text(ys1)
+        msg1 = msg1.split(' ')
+        del msg1[2]
+        msg = self.driver.find_elements(By.XPATH, ys2)
+        mag_text = [msg1]
+        del msg[-1]
+        for i in msg:
+            i = i.text.split('\n')
+            del i[2]
+            i = [x.replace(u'\xa0', '').strip() for x in i if x != '']
+            mag_text.append(i)
+        export_list_text = read_excel_all(text)
+        logger.info(f"assert ({mag_text=}) \nin\n ({export_list_text=})")
+        logger.info("_"*64)
+        for i in mag_text:
+            logger.info(f"assert ({i=}) in list")
+
+            assert i in export_list_text
+
+    def assert_export_in_list(self, loc, text):
+        ys1, ys2 = loc.split(',')
+        msg1 = self.get_text(ys1)
+        msg1 = msg1.split(' ')
+        del msg1[2]
+        msg = self.driver.find_elements(By.XPATH, ys2)
+        mag_text = [msg1]
+        del msg[-1]
+        for i in msg:
+            i = i.text.split('\n')
+            del i[2]
+            i = [x.replace(u'\xa0', '').strip() for x in i if x != '']
+            mag_text.append(i)
+        export_list_text = read_excel_all(text)
+        logger.info(f"assert ({export_list_text=}) \nin\n ({mag_text=}) ")
+        logger.info("_"*64)
+        for i in export_list_text:
+            logger.info(f"assert ({i=}) in mag_text")
+            assert i in mag_text
 
     def ddt_csv(self, loc, file):
         # 打开csv文件，读取数据，返回
@@ -370,6 +412,32 @@ class KeyWord:
         ac.w3c_actions.pointer_action.release()  # 抬起
 
         ac.perform()  # 执行动作
+
+    def hd(self, count):
+        """
+        滑动滚动条，每次滑动长度固定为50
+        :param count:滑动次数
+        :return:
+        """
+        for w in range(count):
+            # 第一个参数x是横向距离，第二个参数y是纵向距离
+            js = 'window.scrollBy(0, 50)'  # 90表示滚动条下滑的长度（位置）
+            driver = self.driver
+            driver.execute_script(js)
+            time.sleep(0.5)
+
+    def hdx(self, count):
+        """
+        滑动滚动条，每次滑动长度固定为50
+        :param count:滑动次数
+        :return:
+        """
+        for w in range(count):
+            # 第一个参数x是横向距离，第二个参数y是纵向距离
+            js = 'window.scrollBy(50, 0)'  # 90表示滚动条下滑的长度（位置）
+            driver = self.driver
+            driver.execute_script(js)
+            time.sleep(0.5)
 
     def swipe(self, x1, y1, x2, y2):
         # 从(x1,y1) 滑动到 （x2,y2）

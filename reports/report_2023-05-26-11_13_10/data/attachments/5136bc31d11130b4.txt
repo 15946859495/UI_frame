@@ -1,0 +1,14 @@
+INFO     2023-05-26 11:01:37 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:01:37 [core.until.cases:90]  : 解析用例名称:case_name='验证删除修改后的互动雷达功能', fixture_name='admin_driver'
+INFO     2023-05-26 11:01:38 [core.until.cases:103]  : 执行关键字name='点击导航栏互动雷达选项', key='click', args=['/html/body/div[1]/div[1]/div[1]/div[2]/div/ul/li[4]/div/span']
+INFO     2023-05-26 11:01:39 [core.until.cases:103]  : 执行关键字name='切换互动雷达主页', key='iframe_enter', args=['//iframe[@src="/marketing/interactRadar/page"]']
+INFO     2023-05-26 11:01:40 [core.until.cases:103]  : 执行关键字name='搜索框输入雷达标题', key='input', args=['//label[contains(text(),"雷达标题")]/../div/div/input', '二次创建互动雷达标题1']
+INFO     2023-05-26 11:01:40 [core.until.cases:103]  : 执行关键字name='搜索框输入创建人用户名', key='input', args=['//label[contains(text(),"创建人")]/../div/div/input', '神秘人']
+INFO     2023-05-26 11:01:41 [core.until.cases:103]  : 执行关键字name='点击查询按钮', key='click', args=['//span[contains(text(),"查询")]']
+INFO     2023-05-26 11:01:41 [core.until.cases:103]  : 执行关键字name='等待', key='sleep', args=[1]
+INFO     2023-05-26 11:01:42 [core.until.cases:103]  : 执行关键字name='点击删除按钮', key='click', args=['//tbody[1]/tr/td[1]/div/div/span[4]']
+INFO     2023-05-26 11:01:43 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 11:01:43 [core.until.cases:103]  : 执行关键字name='点击删除确认按钮', key='click', args=['//div[@class="ivu-modal-confirm-footer"]/button[2]']
+INFO     2023-05-26 11:01:43 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text', args=['//div[@class="ivu-notice-title"]', '删除成功']
+INFO     2023-05-26 11:01:44 [webdriver_helper:226]  : assert (text='删除成功') == (element.text='删除成功')
+INFO     2023-05-26 11:01:44 [core.until.cases:112]  : 测试用例执行结束

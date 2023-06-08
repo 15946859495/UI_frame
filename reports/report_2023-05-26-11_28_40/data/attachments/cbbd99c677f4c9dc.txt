@@ -1,0 +1,12 @@
+INFO     2023-05-26 11:25:49 [core.until.cases:80]  : 测试用例开始执行
+INFO     2023-05-26 11:25:49 [core.until.cases:90]  : 解析用例名称:case_name='创建空标签人群包', fixture_name='admin_driver'
+INFO     2023-05-26 11:25:50 [core.until.cases:103]  : 执行关键字name='点击导航栏人群包选项', key='click', args=["//span[contains(text(),'人群包')]"]
+INFO     2023-05-26 11:25:51 [core.until.cases:103]  : 执行关键字name='切换人群包主页', key='iframe_enter', args=['//iframe[@src="/im/group/page"]']
+INFO     2023-05-26 11:25:52 [core.until.cases:103]  : 执行关键字name='点击创建人群包按钮', key='click', args=["//span[contains(text(),'创建人群包')]"]
+INFO     2023-05-26 11:25:53 [core.until.cases:103]  : 执行关键字name='退出页面', key='iframe_exit', args=[]
+INFO     2023-05-26 11:25:53 [core.until.cases:103]  : 执行关键字name='输入人群包名称', key='input', args=['//input[@placeholder="人群包名称限20字"]', 'Zdh测试人群包名称']
+INFO     2023-05-26 11:25:53 [core.until.cases:103]  : 执行关键字name='输入人群包描述', key='input', args=['//textarea', 'Zdh测试人群包描述']
+INFO     2023-05-26 11:25:54 [core.until.cases:103]  : 执行关键字name='点击确定按钮', key='click', args=["//span[contains(text(),'确定')]"]
+INFO     2023-05-26 11:25:54 [core.until.cases:103]  : 执行关键字name='断言提示信息', key='assert_text', args=["//div[@class='ivu-notice-title']", '创建成功']
+INFO     2023-05-26 11:25:55 [webdriver_helper:226]  : assert (text='创建成功') == (element.text='创建成功')
+INFO     2023-05-26 11:25:55 [core.until.cases:112]  : 测试用例执行结束
